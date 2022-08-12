@@ -1,0 +1,156 @@
+//Fonts
+$growth-viewport: 3vw;
+$header-name-font: clamp(1.8rem, #{$growth-viewport}, 3rem) 'Rubik';
+$header-link-font: clamp(1.6rem, calc(#{$growth-viewport} - 0.2rem), 2.6rem) 'Rubik';
+$hero-font: bold clamp(2rem, calc(#{$growth-viewport} + 0.2rem), 3.4rem)/1.5 'Gadugi';
+$hero-font-blue: #016FFF;
+$about-font: clamp(1.6rem, calc(#{$growth-viewport} - 0.2rem), 3rem)/1.75 'Gadugi';
+$project-title-font: bold clamp(1.6rem, calc(#{$growth-viewport} - 0.2rem), 3rem) 'Gadugi';
+$project-description-font: clamp(1.4rem, calc(#{$growth-viewport} - 0.4rem), 2.8rem)/1.5 'Gadugi';
+$btn-font-bold: bold clamp(1.2rem, calc(#{$growth-viewport} - 0.6rem), 2.6rem) 'Gadugi';
+$btn-font-regular: clamp(1.2rem, calc(#{$growth-viewport} - 0.6rem), 2.6rem) 'Gadugi';
+
+//Colors
+$hero-background: #E8ECF7;
+$btn-background: #345194;
+$btn-border-radius: 3px;
+$btn-shadow: 0 2px 6px rgba(0,0,0,0.15);
+$btn-text: #EEEEEE;
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%
+}
+
+strong {
+  font-weight: bold;
+}
+
+.container {
+  padding: 2rem 0;
+  margin: 0 auto;
+  width: min(90%, 800px);
+}
+
+footer {
+  margin-top: 2rem;
+  
+}
+
+.flex {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  padding: 0;
+  margin-bottom: 1rem;
+  
+}
+
+.name {
+  font: $header-name-font;
+}
+
+.full {
+  background-color: $hero-background;
+  width: min(100%, 800px + 5%)
+
+}
+
+.github-header {
+  width: clamp(2.7rem, 3.5vw, 3.9rem);
+  cursor: pointer;
+}
+
+.header-flex {
+  display: flex;
+  
+}
+
+.header-flex-item1 {
+  flex: 1.25;
+  display: flex;
+  align-items: center;
+}
+
+.header-flex-item2 {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-link-text {
+  font: $header-link-font;
+}
+
+.hero-text {
+  font: $hero-font;
+}
+
+.hero-text :nth-child(1) {
+  color: $hero-font-blue;
+}
+
+.container.full :nth-child(1) {
+  padding: 0;
+}
+
+.about-text {
+  font: $about-font;
+}
+
+.container.about :nth-child(1) {
+  margin-bottom: 1.8rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.project-title {
+  font: $project-title-font; 
+  display: inline;
+  margin-right: 1rem;
+}
+
+button {
+  margin-right: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  color: $btn-text;
+  background-color: $btn-background;
+  border-radius: $btn-border-radius;
+  box-shadow: $btn-shadow;
+  cursor: pointer;
+  
+}
+
+.btn-bold {
+  font: $btn-font-bold
+}
+
+.btn-reg {
+  font: $btn-font-regular
+}
+
+.screenshot {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font: $project-description-font;
+}
+
+a {
+  color: white;
+}
