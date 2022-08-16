@@ -38,9 +38,12 @@ strong {
   width: min(90%, 800px);
 }
 
+.respadding {
+  padding-top: clamp(2rem, 3.5vw, 4rem);
+}
+
 footer {
-  margin-top: 2rem;
-  
+  margin-top: clamp(3rem, 4vw, 5rem);
 }
 
 .flex {
@@ -52,12 +55,19 @@ footer {
 
 .image {
   padding: 0;
-  margin-bottom: 1rem;
-  
 }
 
 .name {
   font: $header-name-font;
+}
+
+.photo {
+  display: block;
+  margin-top: 3.5rem; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: clamp(0rem, calc(3vw - 1rem), 4rem);
+  width: 30%;
 }
 
 .full {
@@ -91,6 +101,7 @@ footer {
 
 .header-link-text {
   font: $header-link-font;
+  cursor: pointer;
 }
 
 .hero-text {

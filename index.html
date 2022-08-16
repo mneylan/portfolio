@@ -8,13 +8,13 @@
     <script src="scripts.js" defer></script>
   </head>
   <body>
-    <header class="container">
+    <header id="header" class="container">
       <div class="header-flex">
         <div class="header-flex-item1">
           <span class="name">Michael Neylan</span>
         </div>
         <div class="header-flex-item2">
-          <span class="header-link-text">Projects</span>
+          <span class="header-link-text" data-type="scroll">Projects</span>
           <a href="https://github.com/mneylan?tab=repositories" target="_blank">
             <img class="github-header" src="./images/GitHub-Mark-32px.png">
           </a> 
@@ -22,12 +22,15 @@
       </div>
     </header>
     <div class="container full">
+      
       <div class="container">
         <p class="hero-text">
           Hello! My name is Michael Neylan, a <span>web developer</span> whose goal is to create web applications that are intuitive, smooth, and easy to use.
         </p>
+        
       </div>
     </div>
+    
     <div class="container about">
       <p class="about-text">
         I want the user to navigate where they need to go clearly and quickly, so they leave with a positive interaction.
@@ -35,9 +38,12 @@
       <p class="about-text">
         My experience includes Ruby, Ruby on Rails, HTML, CSS, Javascript, and React. I'm always looking to learn new languages and frameworks.  
       </p>
+      <img src="./images/hs-2.jpg" class="photo">
     </div>
+    
+
     <div class="container center-text">
-      <h2 class="project-title">Projects</h2>
+      <h2 id="projects" class="project-title">Projects</h2>
     </div>
     <div class="container">
       <h2 class="project-title">Where's Waldo</h2>
@@ -55,7 +61,7 @@
         A take on the popular children’s books, 3 characters from Where’s Waldo are hidden throughout the map and the user is tasked with finding them. The backend is built with Ruby on Rails and the frontend with React. The database stores the x and y coordinates of the characters on the map, as well as a list of players and their scores. At the start and end of the game, a Ruby DateTime object is created, with the difference being the player’s score. When a user clicks on the board and selects a character, the Fetch API makes a call to the backend to check if the character is near where they clicked. Another Fetch call at the end of the game displays a list of high scores with an option for the user to add their name to the list.
       </p>
     </div>
-    <div class="container">
+    <div class="container respadding">
       <h2 class="project-title">Flight Booker</h2>
       <a href="https://github.com/mneylan/flight-booker" target="_blank">
         <button class="btn-bold">&lt/ &gt</button>
@@ -71,7 +77,7 @@
         Looking to retroactively book a flight between September 1st and September 10th 2020? This flight booking application is for you! Built with Ruby on Rails and styled with CSS, users can search for available flights within the Object Relational Database, book a selected flight, and receive confirmation. Rails Active Record Associations create linked relationships between a Flight, Booking, and Passenger model. 
       </p>
     </div>
-    <div class="container">
+    <div class="container respadding">
       <h2 class="project-title">Avalon Interior Lighting</h2>
       <a href="https://github.com/mneylan/shopping-cart" target="_blank">
         <button class="btn-bold">&lt/ &gt</button>
@@ -84,10 +90,10 @@
     <div class="container image">
       <img src="./images/avalon interior.png" class="screenshot">
       <p class="project-description">
-        Browse the new fall selection at Avalon Interior Lighting, for all your lighting needs. Made using React, this mock e-commerce site allows users to browse the items in the shop and add them to a shopping cart. Features increment and decrement buttons that can update an item's quantity without typing. Clicking the cart will dim the shop background while the cart slides into view, showing a list of all selected items and their respective cost. React Router is utilized to provide routes to the home and shop pages of the site. 
+        Browse the new fall selection at Avalon Interior Lighting, for all your lighting needs. Made using React, this mock e-commerce site allows users to browse the items in the shop and add them to a shopping cart. Features increment and decrement buttons that can update an item's quantity without typing. Clicking the cart icon will dim the shop background while the cart slides into view, showing a list of all selected items and their respective cost. React Router is utilized to provide routes to the home and shop pages of the site. 
       </p>
     </div>
-    <div class="container">
+    <div class="container respadding">
       <h2 class="project-title">BE GREAT LLC</h2>
       <a href="https://begreatllc.com/" target="_blank">
         <button class="btn-reg">Live</button>
@@ -103,8 +109,8 @@
     <footer>
       <div class="container full flex">
         <span class="name">Michael Neylan</span>
-        <span class="header-link-text">About</span>
-        <span class="header-link-text">Projects</span>
+        <span class="header-link-text" data-type="scroll">About</span>
+        <span class="header-link-text" data-type="scroll">Projects</span>
         <a href="https://github.com/mneylan?tab=repositories" target="_blank">
           <img class="github-header" src="./images/GitHub-Mark-32px.png">
         </a> 

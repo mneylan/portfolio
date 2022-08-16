@@ -15,8 +15,11 @@ strong {
   margin: 0 auto;
   width: min(90%, 800px); }
 
+.respadding {
+  padding-top: clamp(2rem, 3.5vw, 4rem); }
+
 footer {
-  margin-top: 2rem; }
+  margin-top: clamp(3rem, 4vw, 5rem); }
 
 .flex {
   padding: 3rem 0;
@@ -25,11 +28,18 @@ footer {
   align-items: center; }
 
 .image {
-  padding: 0;
-  margin-bottom: 1rem; }
+  padding: 0; }
 
 .name {
   font: clamp(1.8rem, 3vw, 3rem) "Rubik"; }
+
+.photo {
+  display: block;
+  margin-top: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: clamp(0rem, calc(3vw - 1rem), 4rem);
+  width: 30%; }
 
 .full {
   background-color: #E8ECF7;
@@ -54,7 +64,8 @@ footer {
   align-items: center; }
 
 .header-link-text {
-  font: clamp(1.6rem, calc(3vw - 0.2rem), 2.6rem) "Rubik"; }
+  font: clamp(1.6rem, calc(3vw - 0.2rem), 2.6rem) "Rubik";
+  cursor: pointer; }
 
 .hero-text {
   font: bold clamp(2rem, calc(3vw + 0.2rem), 3.4rem)/1.5 "Gadugi"; }
