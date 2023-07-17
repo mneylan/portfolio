@@ -1,0 +1,28 @@
+$header-name-font: bold 1.8rem Bookman Old Style;
+$header-link-font: bold 1.6rem Bookman Old Style;
+$headline-font: 600 2rem Source Sans Pro;
+$goal-font: 600 1.6rem/1.5 Source Sans Pro;
+$main-font: 'Source Sans Pro';
+$project-section-font: 600 1.8rem 'Gadugi';
+$project-title-font: 600 1.6rem Source Sans Pro;
+$project-tech-font: 1.4rem Source Sans Pro;
+$project-description-font: 1.2rem/1.3 Source Sans Pro;
+$btn-reg-font: 400 1.4rem Tahoma;
+$btn-bold-font: 500 1.4rem Tahoma;
+$footer-links-font: 600 1.6rem Source Sans Pro;
+
+
+old fonts with clamp
+
+$growth-vieport: 3vw;
+$header-name-font: bold clamp(1.8rem, calc(#{$growth-vieport}), 2.8rem) Bookman Old Style;
+$header-link-font: bold clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.4rem) Bookman Old Style;
+$headline-font: 600 clamp(2rem, calc(#{$growth-vieport} + 0.2rem), 3.6rem) Source Sans Pro;
+$goal-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.6rem)/1.5 Source Sans Pro;
+$project-section-font: 600 clamp(1.8rem, calc(#{$growth-vieport}), 3rem) 'Gadugi';
+$project-title-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.6rem) Source Sans Pro;
+$project-tech-font: clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Source Sans Pro;
+$project-description-font: clamp(1.2rem, calc(#{$growth-vieport} - 0.6rem), 1.8rem)/1.3 Source Sans Pro;
+$btn-reg-font: 400 clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Tahoma;
+$btn-bold-font: 500 clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Tahoma;
+$footer-links-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.4rem) Source Sans Pro;

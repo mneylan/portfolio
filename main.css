@@ -4,49 +4,32 @@
   border: 0;
   box-sizing: border-box; }
 
+strong {
+  font-weight: bold; }
+
 html {
   font-size: 62.5%; }
 
-strong {
-  font-weight: bold; }
+body {
+  background-color: #3d405b;
+  color: #F4F1DE; }
 
 .container {
   padding: 2rem 0;
   margin: 0 auto;
-  width: min(90%, 800px); }
+  width: min(90%, 750px); }
 
-.respadding {
-  padding-top: clamp(2rem, 3.5vw, 4rem); }
+.mtop {
+  margin-top: 1rem; }
 
-footer {
-  margin-top: clamp(3rem, 4vw, 5rem); }
-
-.flex {
-  padding: 3rem 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.image {
-  padding: 0; }
+.small {
+  padding: 1rem 0; }
 
 .name {
-  font: clamp(1.8rem, 3vw, 3rem) "Rubik"; }
+  font: bold clamp(1.8rem, calc(3vw), 2.6rem) Bookman Old Style; }
 
-.photo {
-  display: block;
-  margin-top: 3.5rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: clamp(0rem, calc(3vw - 1rem), 4rem);
-  width: 30%; }
-
-.full {
-  background-color: #E8ECF7;
-  width: min(100%, 800px + 5%); }
-
-.github-header {
-  width: clamp(2.7rem, 3.5vw, 3.9rem);
+.header-link-text {
+  font: bold clamp(1.6rem, calc(3vw - 0.2rem), 2.2rem) Bookman Old Style;
   cursor: pointer; }
 
 .header-flex {
@@ -63,56 +46,192 @@ footer {
   justify-content: space-around;
   align-items: center; }
 
-.header-link-text {
-  font: clamp(1.6rem, calc(3vw - 0.2rem), 2.6rem) "Rubik";
-  cursor: pointer; }
+.headline {
+  display: flex; }
 
-.hero-text {
-  font: bold clamp(2rem, calc(3vw + 0.2rem), 3.4rem)/1.5 "Gadugi"; }
+.headline-flex1 {
+  display: flex;
+  gap: 6px;
+  align-items: center; }
 
-.hero-text :nth-child(1) {
-  color: #016FFF; }
+.headline-flex2 {
+  padding-left: 3rem; }
 
-.container.full :nth-child(1) {
-  padding: 0; }
+.headline-text {
+  color: #F2CC8F;
+  font: 600 clamp(2rem, calc(3vw + 0.2rem), 3rem) Source Sans Pro; }
 
-.about-text {
-  font: clamp(1.6rem, calc(3vw - 0.2rem), 3rem)/1.75 "Gadugi"; }
+.box1, .box2, .box3 {
+  border: solid 1px #707070; }
 
-.container.about :nth-child(1) {
-  margin-bottom: 1.8rem; }
+.box1 {
+  height: 80px;
+  width: 10px;
+  background-color: #81B29A; }
 
-.center-text {
+.box2 {
+  height: 50px;
+  width: 10px;
+  background-color: #F4F1DE; }
+
+.box3 {
+  height: 30px;
+  width: 10px;
+  background-color: #E07A5F; }
+
+.goal {
+  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.4rem)/1.5 Source Sans Pro; }
+
+.container .goal:nth-child(2) {
+  margin-top: 1.5rem; }
+
+.projects-header {
+  font: 600 clamp(1.8rem, calc(3vw), 2.8rem) "Gadugi";
   text-align: center; }
 
 .project-title {
-  font: bold clamp(1.6rem, calc(3vw - 0.2rem), 3rem) "Gadugi";
   display: inline;
-  margin-right: 1rem; }
+  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.4rem) Source Sans Pro;
+  position: relative; }
 
 button {
-  margin-right: 0.6rem;
-  padding: 0.5rem 0.75rem;
-  color: #EEEEEE;
-  background-color: #345194;
-  border-radius: 3px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   cursor: pointer; }
 
-.btn-bold {
-  font: bold clamp(1.2rem, calc(3vw - 0.6rem), 2.6rem) "Gadugi"; }
+button:hover {
+  background-color: #E07A5F; }
+
+.btn-container {
+  position: absolute;
+  top: 0;
+  width: 115px;
+  left: 106%; }
 
 .btn-reg {
-  font: clamp(1.2rem, calc(3vw - 0.6rem), 2.6rem) "Gadugi"; }
+  background-color: #F2CC8F;
+  margin-right: 1.5rem;
+  font: 400 clamp(1.4rem, calc(3vw - 0.4rem), 1.8rem) Tahoma;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 4px 3px 0 rgba(2, 2, 2, 0.2); }
 
-.screenshot {
+.btn-bold {
+  background-color: #F2CC8F;
+  font: 500 clamp(1.4rem, calc(3vw - 0.4rem), 1.8rem) Tahoma;
+  padding: 0.5rem 0.5rem;
+  box-shadow: 4px 3px 0 rgba(2, 2, 2, 0.2);
+  letter-spacing: 1px; }
+
+li {
+  font: clamp(1.4rem, calc(3vw - 0.4rem), 1.8rem) Source Sans Pro; }
+
+li::marker {
+  color: #E07A5F;
+  font-size: 2rem; }
+
+ul {
+  list-style-position: inside;
+  margin-top: 1.5rem;
+  grid-column: 1 / -1;
+  grid-row-start: 2; }
+
+.tech-and-description-container {
+  grid-row-start: 2;
+  grid-column: 1/10; }
+
+.psummary-container {
+  margin-top: 1.5rem;
+  background-color: rgba(61, 64, 91, 0.79);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 24px;
+  padding: 1rem 1rem;
+  position: relative;
+  z-index: 1;
+  height: fit-content; }
+
+.psummary-container > p {
+  font: clamp(1.2rem, calc(3vw - 0.6rem), 1.6rem)/1.4 Source Sans Pro; }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.footer-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  gap: clamp(4rem, 5vw, 6rem); }
+
+.footer-photo-container {
+  width: 100px;
+  position: relative; }
+
+.footer-photo-container::after {
+  content: '';
+  position: absolute;
+  top: 3%;
+  left: 6%;
   width: 100%;
-  margin-bottom: 1rem; }
+  height: 100%;
+  background-color: #F4F1DE; }
 
-.project-description {
-  font: clamp(1.4rem, calc(3vw - 0.4rem), 2.8rem)/1.5 "Gadugi"; }
+.footer-photo-container > img {
+  width: 100%;
+  position: relative;
+  z-index: 1; }
 
-a {
-  color: white; }
+.project-grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+  position: relative; }
 
-/*# sourceMappingURL=main.css.map */
+.title-links {
+  grid-column: 1 / -1;
+  grid-row-start: 1;
+  max-width: 250px; }
+
+.title-link-flex2 {
+  min-width: 112px; }
+
+.screenshot-container {
+  grid-column: 6 / -1;
+  grid-row-start: 2;
+  margin-top: 2rem; }
+
+.screenshot-container > img {
+  width: 100%; }
+
+.footer-flex-container span {
+  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.2rem) Source Sans Pro;
+  cursor: pointer; }
+
+@media (min-width: 1px) and (max-width: 350px) {
+  .title-links {
+    max-width: 150px; } }
+@media (min-width: 750px) {
+  .screenshot-container {
+    grid-column-start: auto;
+    grid-row-start: auto;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 6%;
+    max-width: 300px; }
+
+  .title-links {
+    grid-column: 1 / 7; }
+
+  .tech-and-description-container {
+    grid-column-end: 10; }
+
+  li::marker {
+    font-size: 2.5rem; }
+
+  .projects-header {
+    text-align: left;
+    margin-top: 1rem; }
+
+  .project-grid-container {
+    grid-template-rows: auto;
+    position: relative; } }
+
+/*# sourceMappingURL=home.css.map */

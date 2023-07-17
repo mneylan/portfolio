@@ -16,104 +16,163 @@
         <div class="header-flex-item2">
           <span class="header-link-text" data-type="scroll">Projects</span>
           <a href="https://github.com/mneylan?tab=repositories" target="_blank">
-            <img class="github-header" src="./images/GitHub-Mark-32px.png">
+            <img class="github-header" src="./images/GitHub-Mark-Light-32px.png">
           </a> 
         </div>
       </div>
     </header>
-    <div class="container full">
-      
-      <div class="container">
-        <p class="hero-text">
-          Hello! My name is Michael Neylan, a <span>web developer</span> whose goal is to create web applications that are intuitive, smooth, and easy to use.
-        </p>
-        
+
+    <div class="headline container">
+      <div class="headline-flex1">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="headline-flex2">
+        <h2 class="headline-text">I make web applications that are intuitive, smooth, and easy to use.</h2>
       </div>
     </div>
-    
-    <div class="container about">
-      <p class="about-text">
-        I want the user to navigate where they need to go clearly and quickly, so they leave with a positive interaction.
-      </p>
-      <p class="about-text">
-        My experience includes Ruby, Ruby on Rails, HTML, CSS, JavaScript, TypeScript, and React. I'm always looking to learn new languages and frameworks.  
-      </p>
-      <img src="./images/hs-2-min.jpg" class="photo">
-    </div>
-    
 
-    <div class="container center-text">
-      <h2 id="projects" class="project-title">Projects</h2>
-    </div>
     <div class="container">
-      <h2 class="project-title">Where's Waldo</h2>
-      <a href="https://github.com/mneylan/where-is-waldo" target="_blank">
-        <button class="btn-bold">&lt/ &gt</button>
-      </a>
-      <a href="https://where-is-waldo-production.up.railway.app/" target="_blank">
-        <button class="btn-reg">Live</button>
-      </a>
-      
+      <p class="goal">I want the user to navigate where they need to go clearly and quickly, so they leave with a positive association.</p>
+      <p class="goal">I work with Ruby, Ruby on Rails, HTML, CSS, JavaScript, TypeScript, and React. I'm always looking to learn new languages and frameworks. </p>
     </div>
-    <div class="container image">
-      <img src="./images/where is waldo.png" class="screenshot">
-      <p class="project-description">
-        A take on the popular children’s books, 3 characters from Where’s Waldo are hidden throughout the map and the user is tasked with finding them. The backend is built with Ruby on Rails and the frontend with React. The database stores the x and y coordinates of the characters on the map, as well as a list of players and their scores. At the start and end of the game, a Ruby DateTime object is created, with the difference being the player’s score. When a user clicks on the board and selects a character, the Fetch API makes a call to the backend to check if the character is near where they clicked. Another Fetch call at the end of the game displays a list of high scores with an option for the user to add their name to the list.
-      </p>
+
+    <div class="container">
+      <h2 id="projects" class="projects-header">Projects</h2>
     </div>
-    <div class="container respadding">
-      <h2 class="project-title">Flight Booker</h2>
-      <a href="https://github.com/mneylan/flight-booker" target="_blank">
-        <button class="btn-bold">&lt/ &gt</button>
-      </a>
-      <a href="https://flight-booker-production-ed32.up.railway.app/" target="_blank">
-        <button class="btn-reg">Live</button>
-      </a>
-      
+
+    <div class="container small">
+      <div class="project-grid-container">
+        
+        <div class="title-links">
+          <h3 class="project-title">Waldo Photo Tagger
+            <div class="btn-container">
+              <a href="https://github.com/mneylan/where-is-waldo" target="_blank">
+                <button class="btn-reg">&lt/ &gt</button>
+              </a>
+              <a href="https://where-is-waldo-production.up.railway.app/" target="_blank">
+                <button class="btn-bold">Live</button>
+              </a>
+            </div>
+          </h3>
+        </div>
+
+        <div class="tech-and-description-container">
+          <ul>
+            <li>Ruby on Rails</li>
+            <li>React</li>
+          </ul>
+            
+          <div class="psummary-container">
+              <p>A take on the popular children’s books, 3 characters from Where’s Waldo are hidden throughout the map and the user is tasked with finding them. The backend is built with Ruby on Rails and the frontend with React. The database stores the x and y coordinates of the characters on the map, as well as a list of players and their scores.</p>
+          </div>
+        </div> 
+        <div class="screenshot-container">
+            <img src="./images/where is waldo.png" alt="">
+        </div>
+      </div>
     </div>
-    <div class="container image">
-      <img src="./images/flight booker.png" class="screenshot">
-      <p class="project-description">
-        Looking to retroactively book a flight between September 1st and September 10th 2020? This flight booking application is for you! Built with Ruby on Rails and styled with CSS, users can search for available flights within the Object Relational Database, book a selected flight, and receive confirmation. Rails Active Record Associations create linked relationships between a Flight, Booking, and Passenger model. 
-      </p>
+
+    <div class="container mtop">
+      <div class="project-grid-container">
+        
+        <div class="title-links">
+          <h3 class="project-title">Flight Booker
+            <div class="btn-container">
+              <a href="https://github.com/mneylan/flight-booker" target="_blank">
+                <button class="btn-reg">&lt/ &gt</button>
+              </a>
+              <a href="https://flight-booker-production-ed32.up.railway.app/" target="_blank">
+                <button class="btn-bold">Live</button>
+              </a>
+            </div>
+          </h3>
+        </div>
+
+        <div class="tech-and-description-container">
+          <ul>
+            <li>Ruby on Rails</li>
+          </ul>
+            
+          <div class="psummary-container">
+              <p>Looking to retroactively book a flight between September 1st and September 10th 2020? This flight booking application is for you! Built with Ruby on Rails and styled with CSS, users can search for available flights within the Object Relational Database, book a selected flight, and receive confirmation.</p>
+          </div>
+        </div> 
+        <div class="screenshot-container">
+            <img src="./images/flight booker.png" alt="">
+        </div>
+      </div>
     </div>
-    <div class="container respadding">
-      <h2 class="project-title">Avalon Interior Lighting</h2>
-      <a href="https://github.com/mneylan/shopping-cart" target="_blank">
-        <button class="btn-bold">&lt/ &gt</button>
-      </a>
-      <a href="https://mneylan.github.io/shopping-cart/" target="_blank">
-        <button class="btn-reg">Live</button>
-      </a>
-      
+
+    <div class="container mtop">
+      <div class="project-grid-container">
+        
+        <div class="title-links">
+          <h3 class="project-title">Avalon Interior Lighting
+            <div class="btn-container">
+              <a href="https://github.com/mneylan/shopping-cart" target="_blank">
+                <button class="btn-reg">&lt/ &gt</button>
+              </a>
+              <a href="https://mneylan.github.io/shopping-cart/" target="_blank">
+                <button class="btn-bold">Live</button>
+              </a>
+            </div>
+          </h3>
+          
+        </div>
+
+        <div class="tech-and-description-container">
+          <ul>
+            <li>React</li>
+          </ul>
+            
+          <div class="psummary-container">
+              <p>Browse the new fall selection at Avalon Interior Lighting, for all your lighting needs. Made using React, this mock e-commerce site allows users to browse the items in the shop and add them to a shopping cart. Features increment and decrement buttons that can update an item's quantity without typing. Clicking the cart icon will dim the shop background while the cart slides into view, showing a list of all selected items and their respective cost.</p>
+          </div>
+        </div> 
+        <div class="screenshot-container">
+            <img src="./images/avalon interior.png" alt="">
+        </div>
+      </div>
     </div>
-    <div class="container image">
-      <img src="./images/avalon interior.png" class="screenshot">
-      <p class="project-description">
-        Browse the new fall selection at Avalon Interior Lighting, for all your lighting needs. Made using React, this mock e-commerce site allows users to browse the items in the shop and add them to a shopping cart. Features increment and decrement buttons that can update an item's quantity without typing. Clicking the cart icon will dim the shop background while the cart slides into view, showing a list of all selected items and their respective cost. React Router is utilized to provide routes to the home and shop pages of the site. 
-      </p>
+
+    <div class="container mtop">
+      <div class="project-grid-container">
+        
+        <div class="title-links">
+          <h3 class="project-title">BE GREAT LLC
+            <div class="btn-container">
+              <a href="https://begreatllc.com" target="_blank">
+                <button class="btn-bold">Live</button>
+              </a>
+            </div>
+          </h3>
+        </div>
+
+        <div class="tech-and-description-container">
+          <ul>
+            <li>JavaScript</li>
+            <li>CSS</li>
+          </ul>
+            
+          <div class="psummary-container">
+              <p>BE GREAT LLC is a leadership and development company that provides managerial training to people managers. I am currently the primary maintainer of the website, which is built with Squarespace. My past contributions to the site include creating a navigation bar in the People Manager Development and Research sections of the site, fine-tuning the spacing and margins with custom CSS, adding content to the redesigned Blog section, and creating a splash screen with JavaScript as requested.  </p>
+          </div>
+        </div> 
+        <div class="screenshot-container">
+            <img src="./images/be great.png" alt="">
+        </div>
+      </div>
     </div>
-    <div class="container respadding">
-      <h2 class="project-title">BE GREAT LLC</h2>
-      <a href="https://begreatllc.com/" target="_blank">
-        <button class="btn-reg">Live</button>
-      </a>
-      
-    </div>
-    <div class="container image">
-      <img src="./images/be great.png" class="screenshot">
-      <p class="project-description">
-        BE GREAT LLC is a leadership and development company that provides managerial training to people managers. I am currently the primary maintainer of the website, which is built with Squarespace. My past contributions to the site include creating a navigation bar in the People Manager Development and Research sections of the site, fine-tuning the spacing and margins with custom CSS, adding content to the redesigned Blog section, and creating a splash screen with JavaScript as requested. 
-      </p>
-    </div>
+
     <footer>
-      <div class="container full flex">
-        <span class="name">Michael Neylan</span>
-        <span class="header-link-text" data-type="scroll">About</span>
-        <span class="header-link-text" data-type="scroll">Projects</span>
-        <a href="https://github.com/mneylan?tab=repositories" target="_blank">
-          <img class="github-header" src="./images/GitHub-Mark-32px.png">
-        </a> 
+      <div class="footer-flex-container">
+        <div class="footer-photo-container">
+          <img src="images/hs-2-min.jpg" alt="">
+        </div>
+        <span data-type="scroll">About</span>
+        <span data-type="scroll">Projects</span>
       </div>
     </footer>
 

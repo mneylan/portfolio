@@ -1,21 +1,30 @@
-//Fonts
-$growth-viewport: 3vw;
-$header-name-font: clamp(1.8rem, #{$growth-viewport}, 3rem) 'Rubik';
-$header-link-font: clamp(1.6rem, calc(#{$growth-viewport} - 0.2rem), 2.6rem) 'Rubik';
-$hero-font: bold clamp(2rem, calc(#{$growth-viewport} + 0.2rem), 3.4rem)/1.5 'Gadugi';
-$hero-font-blue: #016FFF;
-$about-font: clamp(1.6rem, calc(#{$growth-viewport} - 0.2rem), 3rem)/1.75 'Gadugi';
-$project-title-font: bold clamp(1.6rem, calc(#{$growth-viewport} - 0.2rem), 3rem) 'Gadugi';
-$project-description-font: clamp(1.4rem, calc(#{$growth-viewport} - 0.4rem), 2.8rem)/1.5 'Gadugi';
-$btn-font-bold: bold clamp(1.2rem, calc(#{$growth-viewport} - 0.6rem), 2.6rem) 'Gadugi';
-$btn-font-regular: clamp(1.2rem, calc(#{$growth-viewport} - 0.6rem), 2.6rem) 'Gadugi';
-
 //Colors
-$hero-background: #E8ECF7;
-$btn-background: #345194;
-$btn-border-radius: 3px;
-$btn-shadow: 0 2px 6px rgba(0,0,0,0.15);
-$btn-text: #EEEEEE;
+$blue: #3d405b;
+$red: #E07A5F;
+$green: #81B29A;
+$yellow: #F2CC8F;
+$cream: #F4F1DE;
+$footer-color: rgba(0, 0, 0, 0.4);
+$project-description-color: rgba(61, 64, 91, 0.79);
+$project-description-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+$project-description-border-radius: 24px;
+//Buttons
+$btn-shadow: 4px 3px 0 rgba(2, 2, 2, 0.2);
+
+//Fonts
+$growth-vieport: 3vw;
+$header-name-font: bold clamp(1.8rem, calc(#{$growth-vieport}), 2.6rem) Bookman Old Style;
+$header-link-font: bold clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.2rem) Bookman Old Style;
+$headline-font: 600 clamp(2rem, calc(#{$growth-vieport} + 0.2rem), 3rem) Source Sans Pro;
+$goal-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.4rem)/1.5 Source Sans Pro;
+$project-section-font: 600 clamp(1.8rem, calc(#{$growth-vieport}), 2.8rem) 'Gadugi';
+$project-title-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.4rem) Source Sans Pro;
+$project-tech-font: clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Source Sans Pro;
+$project-description-font: clamp(1.2rem, calc(#{$growth-vieport} - 0.6rem), 1.6rem)/1.4 Source Sans Pro;
+$btn-reg-font: 400 clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Tahoma;
+$btn-bold-font: 500 clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Tahoma;
+$footer-links-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.2rem) Source Sans Pro;
+
 
 *, *::before, *::after {
   margin: 0;
@@ -24,66 +33,44 @@ $btn-text: #EEEEEE;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%
-}
-
 strong {
   font-weight: bold;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $blue;
+  color: $cream;
 }
 
 .container {
   padding: 2rem 0;
   margin: 0 auto;
-  width: min(90%, 800px);
+  width: min(90%, 750px)
 }
 
-.respadding {
-  padding-top: clamp(2rem, 3.5vw, 4rem);
+.mtop {
+  margin-top: 1rem;
 }
 
-footer {
-  margin-top: clamp(3rem, 4vw, 5rem);
-}
-
-.flex {
-  padding: 3rem 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.image {
-  padding: 0;
+.small {
+  padding: 1rem 0;
 }
 
 .name {
   font: $header-name-font;
 }
 
-.photo {
-  display: block;
-  margin-top: 3.5rem; 
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: clamp(0rem, calc(3vw - 1rem), 4rem);
-  width: 30%;
-}
-
-.full {
-  background-color: $hero-background;
-  width: min(100%, 800px + 5%)
-
-}
-
-.github-header {
-  width: clamp(2.7rem, 3.5vw, 3.9rem);
+.header-link-text {
+  font: $header-link-font;
   cursor: pointer;
 }
 
 .header-flex {
   display: flex;
-  
 }
 
 .header-flex-item1 {
@@ -96,72 +83,252 @@ footer {
   flex: 1;
   display: flex;
   justify-content: space-around;
+  align-items: center; 
+}
+
+.headline {
+  display: flex;
+  
+}
+
+.headline-flex1 {
+  display: flex;
+  gap: 6px;
   align-items: center;
 }
 
-.header-link-text {
-  font: $header-link-font;
-  cursor: pointer;
+.headline-flex2 {
+  padding-left: 3rem;
 }
 
-.hero-text {
-  font: $hero-font;
+.headline-text {
+  color: $yellow;
+  font: $headline-font;
+
+} 
+
+.box1, .box2, .box3 {
+  border: solid 1px #707070;
 }
 
-.hero-text :nth-child(1) {
-  color: $hero-font-blue;
+.box1 {
+  height: 80px;
+  width: 10px;
+  background-color: $green;
 }
 
-.container.full :nth-child(1) {
-  padding: 0;
+.box2 {
+  height: 50px;
+  width: 10px;
+  background-color: $cream;
 }
 
-.about-text {
-  font: $about-font;
+.box3 {
+  height: 30px;
+  width: 10px;
+  background-color: $red;
 }
 
-.container.about :nth-child(1) {
-  margin-bottom: 1.8rem;
+.goal {
+  font: $goal-font;
 }
 
-.center-text {
+.container .goal:nth-child(2) {
+  margin-top: 1.5rem;
+}
+
+.projects-header {
+  font: $project-section-font;
   text-align: center;
 }
 
 .project-title {
-  font: $project-title-font; 
   display: inline;
-  margin-right: 1rem;
+  font: $project-title-font;
+  position: relative;
 }
 
 button {
-  margin-right: 0.6rem;
-  padding: 0.5rem 0.75rem;
-  color: $btn-text;
-  background-color: $btn-background;
-  border-radius: $btn-border-radius;
-  box-shadow: $btn-shadow;
   cursor: pointer;
-  
 }
 
-.btn-bold {
-  font: $btn-font-bold
+button:hover {
+  background-color: $red;
+}
+
+.btn-container {
+  position: absolute;
+  top: 0;
+  width: 115px;
+  left: 106%;
 }
 
 .btn-reg {
-  font: $btn-font-regular
+background-color: $yellow;
+margin-right: 1.5rem;
+font: $btn-reg-font;
+padding: 0.5rem 0.5rem;
+box-shadow: $btn-shadow;
 }
 
-.screenshot {
-  width: 100%;
-  margin-bottom: 1rem;
+.btn-bold {
+  background-color: $yellow;
+  font: $btn-bold-font;
+  padding: 0.5rem 0.5rem;
+  box-shadow: $btn-shadow;
+  letter-spacing: 1px;
 }
 
-.project-description {
+
+li {
+  font: $project-tech-font;
+}
+
+li::marker {
+  color: $red;
+  font-size: 2rem;
+}
+
+ul {
+  list-style-position: inside;
+  margin-top: 1.5rem;
+  grid-column: 1 / -1;
+  grid-row-start: 2;
+}
+
+.tech-and-description-container {
+  grid-row-start: 2;
+  grid-column: 1 / 10
+}
+
+.psummary-container {
+  margin-top: 1.5rem;
+  background-color: $project-description-color;
+  box-shadow: $project-description-shadow;
+  border-radius: $project-description-border-radius;
+  padding: 1rem 1rem;
+  position: relative;
+  z-index: 1;
+  height: fit-content;
+}
+
+.psummary-container > p {
   font: $project-description-font;
 }
 
-a {
-  color: white;
+footer {
+  background-color: $footer-color;
 }
+
+.footer-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  gap: clamp(4rem, 5vw, 6rem);
+}
+
+.footer-photo-container {
+  width: 100px;
+  position: relative;
+  
+}
+
+.footer-photo-container::after {
+  content: '';
+  position: absolute;
+  top: 3%;
+  left: 6%;
+  width: 100%;
+  height: 100%;
+  background-color: $cream;
+  
+}
+
+.footer-photo-container > img {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.project-grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+  position: relative;
+}
+
+
+.title-links {
+  grid-column: 1 / -1;
+  grid-row-start: 1;
+  max-width: 250px;
+}
+
+
+.title-link-flex2 {
+  min-width: 112px;
+}
+
+.screenshot-container {
+  grid-column: 6 / -1;
+  grid-row-start: 2;
+  margin-top: 2rem;
+}
+
+.screenshot-container > img {
+  width: 100%;
+}
+
+.footer-flex-container span {
+  font: $footer-links-font;
+  cursor: pointer;
+}
+
+
+
+
+@media (min-width: 1px) and (max-width: 350px) {
+  .title-links {
+    max-width: 150px;
+  }
+}
+
+@media (min-width: 750px) {
+  .screenshot-container {
+    grid-column-start: auto;
+    grid-row-start: auto;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    right: 6%;
+    max-width: 300px;
+    
+  }
+
+  .title-links {
+    grid-column: 1 / 7;
+  }
+
+  .tech-and-description-container {
+    grid-column-end: 10;
+  }
+
+  li::marker {
+    font-size: 2.5rem;
+  }
+
+  
+  .projects-header {
+    text-align: left;
+    margin-top: 1rem;
+  }
+
+  .project-grid-container {
+    grid-template-rows: auto;
+    position: relative;
+  }
+
+}
+
+
