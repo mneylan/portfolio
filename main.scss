@@ -1,3 +1,4 @@
+@import 'fonts.scss';
 //Colors
 $blue: #3d405b;
 $red: #E07A5F;
@@ -13,18 +14,17 @@ $btn-shadow: 4px 3px 0 rgba(2, 2, 2, 0.2);
 
 //Fonts
 $growth-vieport: 3vw;
-$header-name-font: bold clamp(1.8rem, calc(#{$growth-vieport}), 2.6rem) Bookman Old Style;
-$header-link-font: bold clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.2rem) Bookman Old Style;
-$headline-font: 600 clamp(2rem, calc(#{$growth-vieport} + 0.2rem), 3rem) Source Sans Pro;
-$goal-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.4rem)/1.5 Source Sans Pro;
+$header-name-font: bold clamp(1.8rem, calc(#{$growth-vieport}), 2.6rem) 'Bookman Old Style';
+$header-link-font: bold clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.2rem) 'Bookman Old Style';
+$headline-font: 600 clamp(2rem, calc(#{$growth-vieport} + 0.2rem), 3rem) 'Source Sans Pro';
+$goal-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.4rem)/1.5 'Source Sans Pro';
 $project-section-font: 600 clamp(1.8rem, calc(#{$growth-vieport}), 2.8rem) 'Gadugi';
-$project-title-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.4rem) Source Sans Pro;
-$project-tech-font: clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Source Sans Pro;
-$project-description-font: clamp(1.2rem, calc(#{$growth-vieport} - 0.6rem), 1.6rem)/1.4 Source Sans Pro;
+$project-title-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.4rem) 'Source Sans Pro';
+$project-tech-font: clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) 'Source Sans Pro';
+$project-description-font: clamp(1.2rem, calc(#{$growth-vieport} - 0.6rem), 1.6rem)/1.4 'Source Sans Pro';
 $btn-reg-font: 400 clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Tahoma;
 $btn-bold-font: 500 clamp(1.4rem, calc(#{$growth-vieport} - 0.4rem), 1.8rem) Tahoma;
-$footer-links-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.2rem) Source Sans Pro;
-
+$footer-links-font: 600 clamp(1.6rem, calc(#{$growth-vieport} - 0.2rem), 2.2rem) 'Source Sans Pro';
 
 *, *::before, *::after {
   margin: 0;
@@ -163,12 +163,17 @@ button:hover {
   left: 106%;
 }
 
+.btn-container > a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+}
+
 .btn-reg {
 background-color: $yellow;
-margin-right: 1.5rem;
 font: $btn-reg-font;
 padding: 0.5rem 0.5rem;
 box-shadow: $btn-shadow;
+color: black;
 }
 
 .btn-bold {
@@ -177,6 +182,7 @@ box-shadow: $btn-shadow;
   padding: 0.5rem 0.5rem;
   box-shadow: $btn-shadow;
   letter-spacing: 1px;
+  color: black;
 }
 
 
@@ -291,6 +297,20 @@ footer {
 @media (min-width: 1px) and (max-width: 350px) {
   .title-links {
     max-width: 150px;
+  }
+
+  .header-flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .header-flex-item1, .header-flex-item2 {
+    justify-content: center;
+    flex: 1;
+  }
+
+  .header-flex-item2 {
+    gap: 2rem;
   }
 }
 

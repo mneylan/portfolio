@@ -1,3 +1,5 @@
+@import 'fonts.css';
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -26,10 +28,10 @@ body {
   padding: 1rem 0; }
 
 .name {
-  font: bold clamp(1.8rem, calc(3vw), 2.6rem) Bookman Old Style; }
+  font: bold clamp(1.8rem, calc(3vw), 2.6rem) "Bookman Old Style"; }
 
 .header-link-text {
-  font: bold clamp(1.6rem, calc(3vw - 0.2rem), 2.2rem) Bookman Old Style;
+  font: bold clamp(1.6rem, calc(3vw - 0.2rem), 2.2rem) "Bookman Old Style";
   cursor: pointer; }
 
 .header-flex {
@@ -59,7 +61,7 @@ body {
 
 .headline-text {
   color: #F2CC8F;
-  font: 600 clamp(2rem, calc(3vw + 0.2rem), 3rem) Source Sans Pro; }
+  font: 600 clamp(2rem, calc(3vw + 0.2rem), 3rem) "Source Sans Pro"; }
 
 .box1, .box2, .box3 {
   border: solid 1px #707070; }
@@ -80,7 +82,7 @@ body {
   background-color: #E07A5F; }
 
 .goal {
-  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.4rem)/1.5 Source Sans Pro; }
+  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.4rem)/1.5 "Source Sans Pro"; }
 
 .container .goal:nth-child(2) {
   margin-top: 1.5rem; }
@@ -91,7 +93,7 @@ body {
 
 .project-title {
   display: inline;
-  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.4rem) Source Sans Pro;
+  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.4rem) "Source Sans Pro";
   position: relative; }
 
 button {
@@ -106,22 +108,27 @@ button:hover {
   width: 115px;
   left: 106%; }
 
+.btn-container > a {
+  margin-right: 1.5rem;
+  text-decoration: none; }
+
 .btn-reg {
   background-color: #F2CC8F;
-  margin-right: 1.5rem;
   font: 400 clamp(1.4rem, calc(3vw - 0.4rem), 1.8rem) Tahoma;
   padding: 0.5rem 0.5rem;
-  box-shadow: 4px 3px 0 rgba(2, 2, 2, 0.2); }
+  box-shadow: 4px 3px 0 rgba(2, 2, 2, 0.2);
+  color: black; }
 
 .btn-bold {
   background-color: #F2CC8F;
   font: 500 clamp(1.4rem, calc(3vw - 0.4rem), 1.8rem) Tahoma;
   padding: 0.5rem 0.5rem;
   box-shadow: 4px 3px 0 rgba(2, 2, 2, 0.2);
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  color: black; }
 
 li {
-  font: clamp(1.4rem, calc(3vw - 0.4rem), 1.8rem) Source Sans Pro; }
+  font: clamp(1.4rem, calc(3vw - 0.4rem), 1.8rem) "Source Sans Pro"; }
 
 li::marker {
   color: #E07A5F;
@@ -148,7 +155,7 @@ ul {
   height: fit-content; }
 
 .psummary-container > p {
-  font: clamp(1.2rem, calc(3vw - 0.6rem), 1.6rem)/1.4 Source Sans Pro; }
+  font: clamp(1.2rem, calc(3vw - 0.6rem), 1.6rem)/1.4 "Source Sans Pro"; }
 
 footer {
   background-color: rgba(0, 0, 0, 0.4); }
@@ -201,12 +208,23 @@ footer {
   width: 100%; }
 
 .footer-flex-container span {
-  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.2rem) Source Sans Pro;
+  font: 600 clamp(1.6rem, calc(3vw - 0.2rem), 2.2rem) "Source Sans Pro";
   cursor: pointer; }
 
 @media (min-width: 1px) and (max-width: 350px) {
   .title-links {
-    max-width: 150px; } }
+    max-width: 150px; }
+
+  .header-flex {
+    flex-direction: column;
+    gap: 2rem; }
+
+  .header-flex-item1, .header-flex-item2 {
+    justify-content: center;
+    flex: 1; }
+
+  .header-flex-item2 {
+    gap: 2rem; } }
 @media (min-width: 750px) {
   .screenshot-container {
     grid-column-start: auto;
@@ -234,4 +252,4 @@ footer {
     grid-template-rows: auto;
     position: relative; } }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=main.css.map */
